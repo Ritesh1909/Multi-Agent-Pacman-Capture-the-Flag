@@ -1,3 +1,35 @@
+# Multi Agent Pacman Capture the Flag - AI Algorithms
+
+This repository contains the implementation and analysis of Monte Carlo Tree Search (MCTS) and Heuristic Algorithms within a multi-agent Pacman Capture the Flag environment. This project was developed as part of an assignment for the Modern Game AI Algorithms course at Leiden University in 2024.
+
+## Project Overview
+The project focuses on developing AI agents that can efficiently control both Pacman and ghost characters in a team-based strategy game setting. The game environment consists of two opposing teams aiming to collect food pellets from each other's side while defending against ghost attacks.
+
+### Game Mechanics
+- **Scoring:** Points are earned by collecting food pellets and returning them to the team's starting area.
+- **Power Capsules:** When consumed, these capsules turn enemy ghosts into a "scared" state, making them vulnerable to being captured.
+- **End Conditions:** The game ends when a team collects nearly all pellets from the opponent's side or when the move limit is reached.
+
+## Algorithms Implemented
+1. **Monte Carlo Tree Search (MCTS):**
+   - MCTS is used to simulate various gameplay scenarios to make the most informed decision at each game state.
+   - The algorithm explores possible actions by balancing between known good actions and exploring new actions to optimize the gameplay strategy.
+
+2. **Heuristic Algorithm:**
+   - Utilizes predefined heuristic rules to make decisions, which are faster but might not always lead to optimal solutions compared to MCTS.
+   - Focuses on immediate payoffs and defensive strategies to safeguard against opposing team advances.
+
+## Tournament
+- Conducted a local tournament to compare the performance of MCTS and Heuristic algorithms.
+- The tournament involved 30 games, measuring effectiveness based on the number of food pellets collected and overall win rates.
+
+## Key Findings
+- The Heuristic algorithm showed a higher win rate and was generally more efficient in decision-making.
+- MCTS provided better performance in terms of depth of strategy and long-term decision-making.
+
+## Future Work
+- Combining MCTS with Deep Reinforcement Learning (DRL) to enhance decision-making capabilities.
+- Implementing advanced node selection policies like UCB1-Tuned and Progressive Widening to improve the search process in MCTS.
 
 ## Python3 version of UC Berkeley's CS 188 Pacman Capture the Flag project
 
